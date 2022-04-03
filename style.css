@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --clr-cyan: hsl(179, 62%, 43%);
+    --clr-bright-yellow: hsl(71, 73%, 54%);
+    --clr-light-gray: hsl(204, 43%, 93%);
+    --clr-grayish-blue: hsl(218, 22%, 67%);
+    --font-karla: 'Karla', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-light-gray);
+    min-height: 100vh;
+    font-family: var(--font-karla);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 650px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px -5px rgba(0,0,0,0.29);
+    -webkit-box-shadow: 0px 0px 35px -5px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 0px 35px -5px rgba(0,0,0,0.29);
+    margin-inline: 1.5rem;
+}
+
+.top {
+    display: flex;
+}
+
+.bottom {
+    display: flex;
+}
+
+.top-center {
+    background-color: #FFF;
+    border-radius: 10px 10px 0 0;
+    padding: 2.5rem;
+}
+
+.bottom-left {
+    background-color: var(--clr-cyan);
+    width: 50%;
+    border-radius: 0 0 0 10px;
+    padding: 2.5rem;
+}
+
+.bottom-right {
+    background-color: hsl(179, 62%, 43%, 0.8125);
+    width: 50%;
+    border-radius: 0 0 10px 0;
+    padding: 2.5rem;
+}
+
+button {
+    background-color: var(--clr-bright-yellow);
+    color: #FFF;
+    border: none;
+    padding: 1rem 5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.top-center h1 {
+    color: var(--clr-cyan);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.top-center h2 {
+    color: var(--clr-bright-yellow);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.top-center p {
+    color: var(--clr-grayish-blue);
+    line-height: 1.5rem;
+}
+
+.bottom-left h2 {
+    color: #FFF;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+
+.bottom-left h1 {
+    color: #FFF;
+    margin-bottom: 0.5rem;
+}
+
+.bottom-left span {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.bottom-left p {
+    color: #FFF;
+    margin-bottom: 2rem;
+}
+
+.bottom-right h2 {
+    color: #FFF;
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+}
+
+.bottom-right p {
+    color: rgb(255, 255, 255, 0.6);
+    line-height: 1.35rem;
+}
+
+.price {
+    display: flex;
+}
+
+.price span {
+    display: flex;
+    align-items: center;
+    margin-left: 0.75rem;
+}
+
+@media (max-width: 414px) {
+    .card {
+        margin: 2rem;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-left {
+        width: 100%;
+    }
+
+    .bottom-right {
+        width: 100%;
+    }
+
+    .top-center {
+        padding: 2rem;
+    }
+
+    .top-center h1 {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .top-center p {
+        font-size: 0.9rem;
+    }
+
+    .bottom-left {
+        padding: 2rem;
+        border-radius: 0;
+    }
+
+    .bottom-right {
+        padding: 2rem;
+        font-size: 0.95rem;
+        border-radius: 0 0 10px 10px;
+    }
+}
